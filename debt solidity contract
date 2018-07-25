@@ -1,0 +1,34 @@
+pragma solidity 0.4.18;
+
+import "dharma/contracts/BasicTermsContract.sol";
+
+
+contract SimpleLoanTermsContract is BasicTermsContract {
+    mapping (bytes32 => uint) etherRepaid;
+
+    function getValueRepaid(bytes32 debtAgreementId) returns (uint) {
+        return etherRepaid[debtAgreementId];
+    }
+
+    function registerRepayment(bytes32 debtAgreementId, uint amount, address token) {
+        require(isValidRepaymentMessage());
+        etherRepaid[debtAgreementId] = etherRepaid[debtAgreementId] + amount;
+    }
+
+    function getExpectedRepaymentValue(bytes32 debtAgreementId, bytes32 termsContractParameters, uint blockNumber)
+        returns (uint) {
+        uint principal = 1 ether;
+        uint interestRatePercent = uint(termsContractParameters);
+        uint interest = principal * interestRatePercent / 100;
+
+        if (sevenDaysAfter(getDebtAgreementStartBlockNumber(debtAgreementId)) <= blockNumber) {
+            return 0;
+        } else {
+            return principal + interest;
+        }
+    }
+
+    function sevenDaysAfter(uint blockNumber) returns (uint) {
+        return blockNumber + 43200;
+    }
+}
