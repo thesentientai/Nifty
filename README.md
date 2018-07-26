@@ -1,4 +1,5 @@
-# Nifty Hackathon
+# SwapDAO
+###### Nifty Hackathon
 
 ## SwapDAO: A Decentralized, Autonomous Protocol for Non-Fungible Digital Asset Backed Securities
 ### Introduction
