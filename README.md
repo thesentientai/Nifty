@@ -81,7 +81,6 @@ In order to calculate the value of tokens in the network along with the penalty 
 
 Beyond solving the problem of price discovery, 0x offers “our Company” network another highly desirable property: liquidity. Since the penalty fee requires users to possess a native token, it would be suboptimal to require them to move to third party marketplaces when they want to bring their tokens out of the system. In addition to providing an efficient price discovery mechanism, integration with the 0xChanger contract allows the “Company” network to provide “always open” liquidity tokens to its users. With the 0xChanger contract, users will not be required to interact with third-party markets in order to acquire the ERC20 tokens they need to pay to receive/expend their funds, or convert rewards to denomination tokens, and can instead convert our ERC20 token.
 
-### Preserving Upside Potential Whilst Mitigating Drawdown
 
 ### Decentralized Governance 
 
@@ -93,7 +92,31 @@ Vitalik proposed a variant on this he calls “quadratic coin lock voting” whe
  
 In summary, Quadratic Voting is a voting scheme for electing one out of two candidates which departs from the concept of one person, one vote and instead allows each eligible voter to cast multiple votes for any single candidate, thereby expressing the magnitude of his or her preference for the selected decision. After the election, the total revenue is reallocated among the voters according to a refund rule: perhaps each voter get an equal share of the election revenue.
  
+### SwapDAO Token
 
+The SwapDAO token is an ERC-20 Token that represents a Lender’s stake in an NFT-collateralized bond and entitles the holder to monthly payments in ETH as well as the right to vote on governance issues within the bond. This token, SDT, can be sold on both centralized and decentralized exchanges that support ERC-20 tokens. We are proud to announce that our strategic partner, n.exchange, will be listing SDT token today, on 26th July 2018. One of the primary benefits of the SwapDAO Token is that it will grant liquidity to Lenders without affecting the Borrowers, paving the way for a more frictionless lending marketplace.
+### Derivatives
+
+Once we give the market the ability to buy and sell shares of NFT-backed bonds, a secondary market will form in which low-risk bonds backed by established NFTs are sold at a premium and higher-risk bonds backed by riskier NFTs are sold relatively cheaply. If at any given moment, a lender wishes to
+
+### Team
+
+#### Abhinav Narayanan
+
+Abhinav has been a programmer since a young age learning how to hack systems and has always had an infatuation with how genomics and machines intertwine (e.g AI). Abhinav spent a short time at MIT studying Computer Science and Molecular Biology. As he was studying, he sold biotech research to inStem out of Indian Institute of Science having to do with (Pain Detector using Microwave Radiometry, Invitro Alzheimers Cure using gene- editing (e.g CRISPr,TALENs, and Insulysin), Using Anti-Proliferative properties for the Diagnosis of Lung Carcinoma, etcc.) He spent time at the MIT Media
+   
+Lab focusing on security of race conditions in code and most recently Microsoft where he was working as a Security Machine Learning Engineer on a special project creating a new framework for Hadoop. He is currently the founder and CEO of Agua AI, a platform for automatically patching security vulnerabilities in Solidity smart contracts.
+
+#### David Kobrosky
+
+David’s been involved in venture capital, smart contract development, and NFT research. He’s conducted research on behalf of Plug and Play Tech Center, and determined the feasibility of potential ICOs. He’s recently become an advisor to the African Blockchain Initiative as well as Yugo and is a CS/ Business double major at the University of Michigan. David was employee #4 and protocol designer/ Non fungible token researcher for Turing, a New York Techstars blockchain company, and recently has become a contributor towards the ERC948 proposal. As one of four core engineers and founding members of Blockchain @ Michigan, a partner with Consensys, he teaches a cohort of college students how to make production level smart contracts and find jobs in the blockchain space.
+
+#### Yash Sinha
+
+Yash is a cybersecurity enthusiast and former self-taught quant trader, with over a decade of experience in consumer hardware and software. After overhauling the database and scanning technology at Stanford's Biobank, the largest biosample repository in the world, Yash began developing on the blockchain.  Yash is currently the founder and CEO of OMeX, a new marketplace for data-driven cryptocurrency derivatives.
+
+#### Oleg Belousov
+Oleg is a seasoned software engineer with over a decade of experience in cross-platform development. He was formerly the CTO of Vita Personal Labs, a bioinfomatics firm in Tel Aviv, and served as a software consultant for several years. He is presently an advisor for BitDegree, a blockchain based education platform. He is also the founder and CEO of n.exchange, a high-speed cryptocurrency exchange.
 
 
 
