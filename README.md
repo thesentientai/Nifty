@@ -22,7 +22,6 @@ The implications of NFTs go well beyond digital cats. However, as exciting as th
 Investing in anticipation of NFT growth is particularly tough at present time. The obvious and unsatisfying answer is to buy ETH in anticipation of the increased demand in the network to pay elevated gas fees. However, the proper investable vertical exists yet. In the coming months, one should be on the lookout for novel projects working on custodial solutions for NFTs, consumer-friendly UIs for interacting with NFT’s, and developments in the marketplaces in which these unique assets can be exchanged.
 
 
-
 # The Illiquidity of Non-Fungible Tokens
 
 While NFTs are undoubtedly a growing asset class with a large amount of value, it remains relatively difficult to liquidate a non-fungible token as the marketplaces are in an even earlier stage of maturity than traditional, fungible cryptoassets such as Bitcoin and altcoins. There are only a handful of exchanges that provide the ability to buy and sell non-fungible tokens, and all of them are extremely illiquid and do not currently have APIs for algorithmic market makers. As a result, it is nearly impossible to offer a guarantee that a specific quantity of a specific NFT can be liquidated at a given price. Consequently, NFTs by themselves are highly volatile and make poor candidates for collateral. Because of the risk associated with the illiquidity of such NFTs, lenders are generally unwilling to offer loans collateralized by them. 
@@ -65,12 +64,13 @@ Lenders specify the Accepted ERC-721 Tokens, as a list of tokens they are willin
 
 When a Borrower is looking to borrow ETH from the liquidity pool, he or she firstly posts the Collateral Requirement in Accepted ERC-721 Tokens. Next, an ERC-721 token representing the loan and the Borrower’s collateral is issued to the Borrower, along with the requested amount of ETH. Borrowers make monthly payments towards repayment of their loans until the bond’s maturity date. This means that all loans must be initialized 
 
-Price Discovery of ERC-721 Tokens
+# Price Discovery of ERC-721 Tokens
+
 In order to calculate the value of tokens in the network along with the penalty fee generated if a borrower earns a strike was determined by a price discovery mechanism. Using Oracle services as means to pull third party party data into the blockchain. Although the solution was sound, we disliked the central point of failure of an ORacle and didn’t want to rely on third party providers. While ideating how to solve the problem that was so integral to our product, we took notice of 0x and the 0xChanger use of 0xChanger will help us constantly retrieve accurate pricing of our ERC20 token as well as make the experience more seamless for our users. 
 
 # Providing Liquidity to ERC-721 using ERC-20 
 
-Beyond solving the problem of price discovery, 0x offers “our Company” network another highly desirable property: liquidity. Since the penalty fee requires users to possess a native token, it would be suboptimal to require them to move to third party marketplaces when they want to bring their tokens out of the system. In addition to providing an efficient price discovery mechanism, integration with the 0xChanger contract allows the “Company” network to provide “always open” liquidity tokens to its users. With the 0xChanger contract, users will not be required to interact with third-party markets in order to acquire the ERC20 tokens they need to pay to receive/expend their funds, or convert rewards to denomination tokens, and can instead convert our ERC20 token.,
+Beyond solving the problem of price discovery, 0x offers “our Company” network another highly desirable property: liquidity. Since the penalty fee requires users to possess a native token, it would be suboptimal to require them to move to third party marketplaces when they want to bring their tokens out of the system. In addition to providing an efficient price discovery mechanism, integration with the 0xChanger contract allows the “Company” network to provide “always open” liquidity tokens to its users. With the 0xChanger contract, users will not be required to interact with third-party markets in order to acquire the ERC20 tokens they need to pay to receive/expend their funds, or convert rewards to denomination tokens, and can instead convert our ERC20 token.
 
 # Preserving Upside Potential Whilst Mitigating Drawdown
 
@@ -80,7 +80,7 @@ The network is designed with the goal of being fully autonomous and self-sustain
 
 Governance of NFT funds will be handled in a decentralized fashion. We will be using quadratic voting to ensure an optimal level of decentralization. Quadratic voting is a system of buying votes, where each additional vote costs twice as much as the one before it. In other words, money buys votes, but with strong diminishing returns. 
 
-Vitalik proposed a variant on this he calls “quadratic coin lock voting” where N coins let you make N * k votes by locking up those coins for a time period of k². This is a nice modification because it aligns incentives over time: more voting power requires living with your decisions for longer (In a tokenized world with little friction of entering or leaving a community, this is especially important).
+Vitalik proposed a variant on this he calls “quadratic coin lock voting” where N coins let you make `N * k` votes by locking up those coins for a time period of `k²`. This is a nice modification because it aligns incentives over time: more voting power requires living with your decisions for longer (In a tokenized world with little friction of entering or leaving a community, this is especially important).
  
 In summary, Quadratic Voting is a voting scheme for electing one out of two candidates which departs from the concept of one person, one vote and instead allows each eligible voter to cast multiple votes for any single candidate, thereby expressing the magnitude of his or her preference for the selected decision. After the election, the total revenue is reallocated among the voters according to a refund rule: perhaps each voter get an equal share of the election revenue.
  
